@@ -20,9 +20,9 @@ PUT: для обновления существующих данных на се
 ## 4. Примеры использования проекта с приложением скриншотов или фрагментов кода
 1. Зайдите на сайт http://sandbox.usm.md/login.
 2. Откройте вкладку Network в инструментах разработчика браузера.
-3. Введите неверные данные для входа (например, username: student, password: studentpass).![1](https://example.com/1.png)
-4. Повторите шаги, введя верные данные для входа (username: admin, password: password).![1](https://example.com/2.png)
-5. Составьте GET-запрос к серверу по адресу http://sandbox.com, указав в заголовке User-Agent ваше имя и фамилию. curl -X GET http://sandbox.com -H "User-Agent: Тихонюк Кристина" ![1](https://example.com/3.png)
+3. Введите неверные данные для входа (например, username: student, password: studentpass).![1](https://github.com/Kristinajfnb/lab1/blob/main/1.png)
+4. Повторите шаги, введя верные данные для входа (username: admin, password: password).![2](https://github.com/Kristinajfnb/lab1/blob/main/2.png)
+5. Составьте GET-запрос к серверу по адресу http://sandbox.com, указав в заголовке User-Agent ваше имя и фамилию. curl -X GET http://sandbox.com -H "User-Agent: Тихонюк Кристина" ![3](https://github.com/Kristinajfnb/lab1/blob/main/3.png)
 6. Составьте POST-запрос к серверу по адресу http://sandbox.com/cars, указав в теле запроса следующие параметры:
 make: Toyota
 model: Corolla
@@ -46,7 +46,7 @@ HTTP 404 Not Found
 HTTP 500 Internal Server Error
 Ситуация: Произошла ошибка на стороне сервера при обработке запроса.
 9. Отправьте POST-запрос на сервер по адресу http://sandbox.usm.md/quest, указав в заголовке User-Agent вашу фамилию и имя. 
-10. Следуйте инструкциям на сервере, выполняя их по порядку.![1](https://example.com/4.png)![1](https://example.com/5.png)![1](https://example.com/6.png)![1](https://example.com/7.png)
+10. Следуйте инструкциям на сервере, выполняя их по порядку.![4](https://github.com/Kristinajfnb/lab1/blob/main/4.png)![5](https://github.com/Kristinajfnb/lab1/blob/main/5.png)![6](https://github.com/Kristinajfnb/lab1/blob/main/6.png)![7](https://github.com/Kristinajfnb/lab1/blob/main/7.png)
 ## 5. Ответы на контрольные вопросы
 ### Неверные данные
 Какой метод HTTP был использован для отправки запроса?
