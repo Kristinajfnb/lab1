@@ -27,10 +27,12 @@ PUT: для обновления существующих данных на се
 make: Toyota
 model: Corolla
 year: 2020
+
 curl -X POST http://sandbox.com/cars -H "Content-Type: application/x-www-form-urlencoded" -d "make=Toyota&model=Corolla&year=2020"
-7. Составьте PUT-запрос к серверу по адресу http://sandbox.com/cars/1, указав в заголовке User-Agent ваше имя и фамилию, в заголовке Content-Type значение application/json и в теле запроса следующие параметры: json { "make": "Toyota", "model": "Corolla", "year": 2021 }
+8. Составьте PUT-запрос к серверу по адресу http://sandbox.com/cars/1, указав в заголовке User-Agent ваше имя и фамилию, в заголовке Content-Type значение application/json и в теле запроса следующие параметры: json { "make": "Toyota", "model": "Corolla", "year": 2021 }
+
 curl -X PUT http://sandbox.com/cars/1 -H "User-Agent: Тихонюк Кристина" -H "Content-Type: application/json" -d '{"make": "Toyota", "model": "Corolla", "year": 2021}'
-8. Напишите один из возможных вариантов ответа сервера следующий запрос. http POST /cars HTTP/1.1 Host: sandbox.com Content-Type: application/json User-Agent: John Doe model=Corolla&make=Toyota&year=2020 Предположите ситуации, когда сервер может вернуть HTTP-коды состояния 200, 201, 400, 401, 403, 404, 500.
+9. Напишите один из возможных вариантов ответа сервера следующий запрос. http POST /cars HTTP/1.1 Host: sandbox.com Content-Type: application/json User-Agent: John Doe model=Corolla&make=Toyota&year=2020 Предположите ситуации, когда сервер может вернуть HTTP-коды состояния 200, 201, 400, 401, 403, 404, 500.
 HTTP 200 OK
 Ситуация: Сервер успешно обработал запрос и вернул подтверждение об успешной обработке данных.
 HTTP 201 Created
@@ -45,8 +47,8 @@ HTTP 404 Not Found
 Ситуация: Запрашиваемый ресурс не был найден на сервере.
 HTTP 500 Internal Server Error
 Ситуация: Произошла ошибка на стороне сервера при обработке запроса.
-9. Отправьте POST-запрос на сервер по адресу http://sandbox.usm.md/quest, указав в заголовке User-Agent вашу фамилию и имя. 
-10. Следуйте инструкциям на сервере, выполняя их по порядку.![4](https://github.com/Kristinajfnb/lab1/blob/main/4.png)![5](https://github.com/Kristinajfnb/lab1/blob/main/5.png)![6](https://github.com/Kristinajfnb/lab1/blob/main/6.png)![7](https://github.com/Kristinajfnb/lab1/blob/main/7.png)
+10. Отправьте POST-запрос на сервер по адресу http://sandbox.usm.md/quest, указав в заголовке User-Agent вашу фамилию и имя. 
+11. Следуйте инструкциям на сервере, выполняя их по порядку.![4](https://github.com/Kristinajfnb/lab1/blob/main/4.png)![5](https://github.com/Kristinajfnb/lab1/blob/main/5.png)![6](https://github.com/Kristinajfnb/lab1/blob/main/6.png)![7](https://github.com/Kristinajfnb/lab1/blob/main/7.png)
 ## 5. Ответы на контрольные вопросы
 ### Неверные данные
 Какой метод HTTP был использован для отправки запроса?
