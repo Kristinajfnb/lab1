@@ -35,6 +35,7 @@ curl -X POST http://sandbox.com/cars -H "Content-Type: application/x-www-form-ur
 curl -X PUT http://sandbox.com/cars/1 -H "User-Agent: Тихонюк Кристина" -H "Content-Type: application/json" -d '{"make": "Toyota", "model": "Corolla", "year": 2021}'
 
 8. Напишите один из возможных вариантов ответа сервера следующий запрос. http POST /cars HTTP/1.1 Host: sandbox.com Content-Type: application/json User-Agent: John Doe model=Corolla&make=Toyota&year=2020 Предположите ситуации, когда сервер может вернуть HTTP-коды состояния 200, 201, 400, 401, 403, 404, 500.
+   
 HTTP 200 OK
 Ситуация: Сервер успешно обработал запрос и вернул подтверждение об успешной обработке данных.
 HTTP 201 Created
